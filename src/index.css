@@ -44,3 +44,46 @@ body {
   font-size: 16px;
   line-height: 110%;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  padding: 20px;
+}
+
+.card-image {
+  border-radius: 9px;
+  width: 176px;
+  height: 235px;
+}
+
+.card-star {
+  margin-top: 10px;
+  width: 14px;
+  height: 14px;
+}
+
+.rating-div {
+  display: flex;
+}
+
+.rating-div > p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+  /* identical to box height, or 13px */
+  color: #c9c9c9;
+  padding-left: 2px;
+}
+
+.card > p {
+  margin-top: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+}

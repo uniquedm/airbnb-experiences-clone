@@ -15,6 +15,7 @@ export default function Card() {
             </div>
             <p>Learn wedding photography</p>
             <p><b>From $125</b> / person</p>
+            <p className="card-status">Online</p>
         </div>
     )
 }

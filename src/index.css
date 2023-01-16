@@ -87,3 +87,11 @@ body {
   font-size: 12px;
   line-height: 110%;
 }
+
+.card-status {
+  color: black;
+  padding: 4px;
+  width: 6ex;
+  border-radius: 4px;
+  background-color: white;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import overview from "../hero.png"
+import overview from "../images/hero.png"
 
 export default function Hero() {
     return (

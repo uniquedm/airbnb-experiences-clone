@@ -1,6 +1,6 @@
 import React from "react";
-import image from "../wedding-photo.png"
-import star from "../star.png"
+import image from "../images/wedding-photo.png"
+import star from "../images/star.png"
 
 export default function Card() {
     return (

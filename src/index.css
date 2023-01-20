@@ -48,14 +48,20 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  margin-left: 3%;
-  padding: 20px;
+  margin-left: 1%;
 }
 
 .card-image {
   border-radius: 9px;
   width: 176px;
   height: 235px;
+}
+
+.card-image-gray{
+  border-radius: 9px;
+  width: 176px;
+  height: 235px;
+  filter: grayscale(100%);
 }
 
 .card-image:hover {
@@ -97,11 +103,12 @@ body {
 .card-status {
   color: black;
   padding: 4px;
-  width: 6ex;
+  width: 25ex;
   border-radius: 4px;
   background-color: white;
 }
 
 .cards-list {
   display: flex;
+  padding-left: 3%;
 }

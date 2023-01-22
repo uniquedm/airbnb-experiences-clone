@@ -1,7 +1,8 @@
 import React from "react";
 import star from "../images/star.png"
 
-export default function Card({img, status, title, rating, ratingCount, price}) {
+export default function Card(props) {
+    const {img, status, title, rating, ratingCount, price} = props
     let imageStyle = "card-image"
     if (status==="Sold Out") {
         imageStyle = "card-image-gray"

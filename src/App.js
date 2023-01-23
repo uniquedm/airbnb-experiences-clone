@@ -17,7 +17,7 @@ export default function App() {
                 ratingCount="30"
                 country="USA"
                 title="Learn wedding photography"
-                price="$125"
+                price="125"
                 status="Online"
             />
             <Card 
@@ -26,7 +26,7 @@ export default function App() {
                 ratingCount="6"
                 country="USA"
                 title="Life lessons with Katie Zaferes"
-                price="$136"
+                price="136"
                 status="Sold Out"
             />
             </div>

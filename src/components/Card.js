@@ -19,7 +19,7 @@ export default function Card(props) {
                 <p>USA</p>
             </div>
             <p>{title}</p>
-            <p><b>From {price}</b> / person</p>
+            <p><b>From ${price}</b> / person</p>
             <p className="card-status">{status}</p>
         </div>
     )

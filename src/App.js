@@ -14,7 +14,7 @@ export default function App() {
                     country={card.location}
                     title={card.title}
                     price={card.price}
-                    status={card.status}
+                    slots={card.openSpots}
                 />
     });
     return (

@@ -2,15 +2,12 @@ import React from "react";
 import star from "../images/star.png"
 
 export default function Card(props) {
-    const {img, status, title, rating, ratingCount, price, country} = props
-    let imageStyle = "card-image"
-    if (status==="Sold Out") {
-        imageStyle = "card-image-gray"
-    }
+    const {img, title, rating, ratingCount, price, country, slots} = props
 
     return (
         <div className="card">
-            <img className={imageStyle} src={img} alt = "content" />
+            {slots === 0 && <div className="card-badge">Sold Out</div>}
+            <img className="card-image" src={img} alt = "content" />
             <div className="rating-div">
                 <img className="card-star" src={star} alt = "content" />
                 <p><b>{rating}</b></p>
@@ -20,7 +17,6 @@ export default function Card(props) {
             </div>
             <p>{title}</p>
             <p><b>From ${price}</b> / person</p>
-            <p className="card-status">{status}</p>
         </div>
     )
 }

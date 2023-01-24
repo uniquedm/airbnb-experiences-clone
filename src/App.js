@@ -2,33 +2,26 @@ import React from "react"
 import Hero from "./components/Hero"
 import NavBar from "./components/NavBar"
 import Card from "./components/Card"
-import weddingImage from "./images/wedding-photo.png"
-import katieZaferesImage from "./images/katie-zaferes.png"
+import data from "./data"
 
 export default function App() {
+    const cards = data.map(card => {
+        return  <Card
+                    img={"./images/" + card.coverImg}
+                    rating={card.stats.rating}
+                    ratingCount={card.stats.reviewCount}
+                    country={card.location}
+                    title={card.title}
+                    price={card.price}
+                    status={card.status}
+                />
+    });
     return (
         <div>
             <NavBar />
             <Hero />
             <div className="cards-list">
-            <Card 
-                img={weddingImage}
-                rating="5.0"
-                ratingCount="30"
-                country="USA"
-                title="Learn wedding photography"
-                price="125"
-                status="Online"
-            />
-            <Card 
-                img={katieZaferesImage}
-                rating="5.0"
-                ratingCount="6"
-                country="USA"
-                title="Life lessons with Katie Zaferes"
-                price="136"
-                status="Sold Out"
-            />
+            {cards}
             </div>
         </div>
     )

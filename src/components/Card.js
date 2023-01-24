@@ -2,7 +2,7 @@ import React from "react";
 import star from "../images/star.png"
 
 export default function Card(props) {
-    const {img, status, title, rating, ratingCount, price} = props
+    const {img, status, title, rating, ratingCount, price, country} = props
     let imageStyle = "card-image"
     if (status==="Sold Out") {
         imageStyle = "card-image-gray"
@@ -16,7 +16,7 @@ export default function Card(props) {
                 <p><b>{rating}</b></p>
                 <p>({ratingCount})</p>
                 <p>.</p>
-                <p>USA</p>
+                <p>{country}</p>
             </div>
             <p>{title}</p>
             <p><b>From ${price}</b> / person</p>

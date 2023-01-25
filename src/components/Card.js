@@ -3,10 +3,16 @@ import star from "../images/star.png"
 
 export default function Card(props) {
     const {img, title, rating, ratingCount, price, country, slots} = props
+    let badgeText
+    if (slots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (country === "Online") {
+        badgeText = "ONLINE"
+    }
 
     return (
         <div className="card">
-            {slots === 0 && <div className="card-badge">Sold Out</div>}
+            {badgeText && <div className="card-badge">{badgeText}</div>}
             <img className="card-image" src={img} alt = "content" />
             <div className="rating-div">
                 <img className="card-star" src={star} alt = "content" />

@@ -104,8 +104,8 @@ body {
 }
 
 .card-badge {
-  font-size: smaller;
-  font-weight: 500;
+  font-size: small;
+  font-weight: 600;
   position: absolute;
   padding: 1%;
   height: 20px;
@@ -113,8 +113,11 @@ body {
   top: 1.5%;
   color: black;
   padding: 4px;
-  width: 8ex;
+  width: 10ex;
   border-radius: 4px;
   background-color: white;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
 }
